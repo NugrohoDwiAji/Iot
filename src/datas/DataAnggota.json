@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nama": "Sappatin", "posisi": "Hardware Engineer", "img": "/Sappatin.png" },
+  { "id": 2, "nama": "Yuli Laily Niswanti", "posisi": "Finware Engineer", "img": "/Yuli-Laily-Niswanti.png" },
+  { "id": 3, "nama": "Lalu Gunawan Had", "posisi": "Sofware Engineer", "img": "/Lalu-Gunawan-Had.png" },
+  { "id": 4, "nama": "Safitriani", "posisi": "UI/UX Designer", "img": "/Safitriani.png" }
+]
