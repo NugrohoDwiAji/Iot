@@ -72,7 +72,7 @@ const [nilaiSensorHujan, setnilaiSensorHujan] = useState(30)
       </div>
       <div className="flex flex-col md:flex-row lg:flex-col gap-5">
         <CardGrafik title={"Nilai Sensor Hujan"} text={`+ ${nilaiSensorHujan} °C`}><BarChart/></CardGrafik>
-        <CardGrafik title={"Nilai Sensor Hujan"} text={`+ ${nilaiSensorHujan} °C`}><GrafikArea/></CardGrafik>
+        <CardGrafik title={"Intesitas Cahaya"} text={`+ ${nilaiSensorHujan} °C`}><GrafikArea/></CardGrafik>
       </div>
    
     </div>
