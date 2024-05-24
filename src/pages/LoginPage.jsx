@@ -19,7 +19,7 @@ const LoginPage = () => {
         />
         <Corak className={"md:h-16 md:w-[68px] bg-blue-200 lg:bottom-3 lg:left-[470px] md:left-36 md:bottom-44 hidden md:block"} />
       </div>
-      <div className="flex items-center justify-center h-full">
+      <div className="flex items-center justify-center h-full relative z-50">
         <CardLogin />
       </div>
       <div>
