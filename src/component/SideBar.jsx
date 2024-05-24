@@ -16,11 +16,11 @@ const dataNav = [
 
 const SideBar = () => {
   return (
-    <div className="fixed  left-0 top-0 md:bottom-0 w-full md:w-28 bg-primary-0 flex md:flex-col items-center justify-evenly md:justify-start  p-5 md gap-5 z-50">
+    <div className="fixed  left-0 top-0 md:bottom-0 w-full md:w-28 bg-primary-0 flex md:flex-col items-center justify-evenly md:justify-start  md:p-5 p-2 md gap-5 z-50">
       {dataNav.map((item) => (
         <Link to={item.link} className="flex flex-col items-center justify-center hover:scale-105" key={item.id}>
-            <div className="text-secondary-0 text-4xl">{item.icon}</div>
-            <h1 className="font-semibold">{item.text}</h1>
+            <div className="text-secondary-0 md:text-4xl text-2xl">{item.icon}</div>
+            <h1 className="font-semibold text-sm">{item.text}</h1>
         </Link>
       ))}
 

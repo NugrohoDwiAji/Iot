@@ -5,8 +5,8 @@ const HomePage = () => {
   return (
     <div>
       <SideBar />
-      <div className="h-screen flex pt-32 bg-[#F7F1FF]">
-        <div className="md:ml-28 italic text-center flex flex-col items-center w-1/2 gap-5 md:px-10 px-3">
+      <div className="h-screen flex flex-col  lg:flex-row pt-32 bg-[#F7F1FF]">
+        <div className="md:ml-28 italic text-center flex flex-col items-center lg:w-1/2 gap-5 md:px-10 px-3">
           <h1 className=" text-secondary-0 md:text-3xl font-semibold ">
             JEMURAN OTOMATIS BERBASIS <br /> INTERNET OF THINGS
           </h1>
@@ -18,11 +18,11 @@ const HomePage = () => {
             mengaplikasikan sensor hujan untuk membuat jemuran otomatis.
           </p>
         </div>
-        <div className="absolute top-5 right-10 "><img src="/logo.png" alt="" className="h-16"/></div>
+        <div className="absolute md:top-5 md:right-10 top-20 right-5  "><img src="/logo.png" alt="" className="md:h-16 h-11"/></div>
         <div className="w-1/2 pl-32 ">
-          <div className="md:h-36 md:w-36 rounded-full bg-primary-0"></div>
-          <div className="md:h-48 md:w-48 h-24 w-24 rounded-xl bg-secondary-0 relative mt-14 lg:mt-5 lg:-right-32"></div>
-          <div className="md:h-36 md:w-36 rounded-full bg-primary-0 relative mt-14 lg:mt-5 lg:left-40"></div>
+          <div className="md:h-36 md:w-36 rounded-full bg-primary-0 h-28 w-28 mt-5 md:mt-0"></div>
+          <div className="md:h-48 md:w-48 h-24 w-24 rounded-xl bg-secondary-0 relative mt-10 lg:mt-5 lg:-right-32 md-right-36 left-20 "></div>
+          <div className="md:h-36 md:w-36 h-20 w-20 rounded-full bg-primary-0 relative mt-10 lg:mt-5 lg:left-40 md:-right-80  right-6"></div>
         </div>
       </div>
     </div>

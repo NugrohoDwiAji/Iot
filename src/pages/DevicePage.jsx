@@ -54,12 +54,12 @@ const [nilaiSensorHujan, setnilaiSensorHujan] = useState(30)
 
 
   return (
-    <div className="h-screen w-screen flex bg-primary-0 bg-opacity-60 items-center justify-center gap-5">
+    <div className="md:h-screen w-screen flex flex-col lg:flex-row bg-primary-0 bg-opacity-60 items-center lg:justify-center gap-5">
       <SideBar />
-      <div className="absolute top-5 right-10 flex gap-2 ">
-        <img src="/logo.png" alt="" className="h-16" /> <BsPersonCircle size={40} />
+      <div className="absolute md:top-5 md:right-10 top-16 right-3 flex gap-2  ">
+        <img src="/logo.png" alt="" className="md:h-16 h-11" /> <BsPersonCircle size={40} />
       </div>
-      <div className="w-fit h-fit bg-white grid grid-cols-2 gap-5 rounded-xl p-5">
+      <div className="w-fit h-fit bg-white grid md:grid-cols-2  gap-5 rounded-xl p-5 mt-32">
         {dataCont.map((item) => (
           <CardControl
             itemTopLeft={item.itemTopleft}
@@ -70,7 +70,7 @@ const [nilaiSensorHujan, setnilaiSensorHujan] = useState(30)
           />
         ))}
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col md:flex-row lg:flex-col gap-5">
         <CardGrafik title={"Nilai Sensor Hujan"} text={`+ ${nilaiSensorHujan} °C`}><BarChart/></CardGrafik>
         <CardGrafik title={"Nilai Sensor Hujan"} text={`+ ${nilaiSensorHujan} °C`}><GrafikArea/></CardGrafik>
       </div>
