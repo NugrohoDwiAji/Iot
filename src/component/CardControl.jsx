@@ -13,8 +13,8 @@ const CardControl = ({
         <div className="lg:text-4xl">{itemBottomLeft}</div>
       </div>
       <div className="flex flex-col justify-between">
-        <div className="lg:text-2xl text-[#09006E] font-semibold">{itemTopRight}</div>
-        <div >{itemBottomRight}</div>
+        <div className="lg:text-xl text-[#09006E] font-semibold">{itemTopRight}</div>
+        <div className="lg:text-xl text-[#09006E] font-semibold" >{itemBottomRight}</div>
       </div>
     </div>
   );

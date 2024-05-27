@@ -1,7 +1,11 @@
-import React from "react";
-import SideBar from "../component/SideBar";
+import React,{useEffect} from "react";
+import SideBar from "../component/SideBar"
+
+
 
 const HomePage = () => {
+
+
   return (
     <div>
       <SideBar />

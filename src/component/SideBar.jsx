@@ -9,9 +9,9 @@ import { FaPowerOff } from "react-icons/fa";
 
 const dataNav = [
   { id: 1, link: "/home", icon: <FaHome />, text: "Home" },
-  { id: 1, link: "/device", icon: <PiDevicesLight />, text: "Device" },
-  { id: 1, link: "/about", icon: <IoPeople />, text: "About" },
-  { id: 1, link: "/", icon: <FaPowerOff />, text: "Logout" },
+  { id: 2, link: "/device", icon: <PiDevicesLight />, text: "Device" },
+  { id: 3, link: "/about", icon: <IoPeople />, text: "About" },
+  { id: 4, link: "/", icon: <FaPowerOff />, text: "Logout" },
 ];
 
 const SideBar = () => {
