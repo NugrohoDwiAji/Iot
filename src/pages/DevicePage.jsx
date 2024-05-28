@@ -87,7 +87,7 @@ useEffect(() => {
     <div className=" w-screen flex flex-col bg-primary-0 bg-opacity-60 items-center lg:justify-center gap-5 pb-20">
       <SideBar />
       <div className="absolute md:top-5 md:right-10 top-16 right-3 flex gap-2  ">
-        <img src="/logo.png" alt="" className="md:h-16 h-11" /> <BsPersonCircle size={40} />
+        <img src="/logo.png" alt="" className="md:h-16 h-11" />
       </div>
       <div className="w-fit h-fit bg-white grid md:grid-cols-3  gap-5 rounded-xl p-5 mt-32 md:ml-32 lg:ml-0">
         {dataCont.map((item) => (
