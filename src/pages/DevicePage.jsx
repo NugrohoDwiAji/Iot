@@ -9,6 +9,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { BsPersonCircle } from "react-icons/bs";
 import CardGrafik from "../component/CardGrafik";
 import GrafikAreaIntensitas from "../component/element/GrafikIntensitas";
+import GrafikHujan from "../component/element/GrafikHujan";
 
 
 
@@ -101,7 +102,7 @@ useEffect(() => {
         ))}
       </div>
       <div className="flex flex-col  lg:flex-row  gap-5 md:ml-32 lg:ml-0">
-        <CardGrafik title={"Nilai Sensor Hujan"} text={`+ ${nilaiSensorHujan} °C`}><GrafikAreaIntensitas/></CardGrafik>
+        <CardGrafik title={"Nilai Sensor Hujan"} text={`+ ${nilaiSensorHujan} °C`}><GrafikHujan/></CardGrafik>
         <CardGrafik title={"Intesitas Cahaya"} text={`+ ${nilaiSensorLdr} I`}><GrafikAreaIntensitas/></CardGrafik>
       </div>
    

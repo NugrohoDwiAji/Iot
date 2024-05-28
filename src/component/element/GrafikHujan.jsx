@@ -3,7 +3,7 @@ import axios from 'axios';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 
-const apiIntensitas ="https://sgp1.blynk.cloud/external/api/get?token=9h___y_Os20z-iWX25xb9LpTe4hrTqqr&dataStreamId=2"
+const apiHujan ="https://sgp1.blynk.cloud/external/api/get?token=9h___y_Os20z-iWX25xb9LpTe4hrTqqr&dataStreamId=2"
 
 
 
@@ -14,7 +14,7 @@ const GrafikHujan = () => {
     useEffect(() => {
       const fetchSensorData = async () => {
         try {
-          const response = await axios.get(apiIntensitas);
+          const response = await axios.get(apiHujan);
           const sensorValue = parseFloat(response.data); // Assuming sensor data is a single value
           console.log("data masuk:" + sensorValue)
   
