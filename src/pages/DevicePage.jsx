@@ -21,8 +21,6 @@ const api_bylinkketerangan="https://sgp1.blynk.cloud/external/api/get?token=9h__
 const DevicePage = () => {
 const [nilaiSensorHujan, setnilaiSensorHujan] = useState("...Loading")
 const [nilaiSensorLdr, setnilaiSensorLdr] = useState("...Loading")
-const [statuSensorHujan, setstatusSensorHujan] = useState("...Loading")
-const [statusSensorLdr, setstatusSensorLdr] = useState("...Loading")
 const [statusJemuran, setstatusJemuran] = useState("...Loading")
 const dataCont = [
   {
@@ -30,7 +28,7 @@ const dataCont = [
     itemTopleft: <PiThermometerBold />,
     itemBottomLeft: "",
     itemTopRight: nilaiSensorHujan,
-    itemBottomRight: `Pemberitahuan Hujan \n${statuSensorHujan}`,
+    itemBottomRight: `Nilai Sensor Hujan `,
     action: "",
   },
   {
@@ -38,7 +36,7 @@ const dataCont = [
     itemTopleft:  <HiOutlineLightBulb />,
     itemBottomLeft:"",
     itemTopRight: nilaiSensorLdr,
-    itemBottomRight: `Intensitas Cahaya ${statusSensorLdr}`,
+    itemBottomRight: `Intensitas Cahaya`,
     action: "",
   },
   {
@@ -64,12 +62,8 @@ useEffect(() => {
       const sensorIntensitas = responseIntensitas.data;
       const sensorHujan = responseHujan.data;
       const sensorKeterangan = responseKeterangan.data;
-      const statusHujan = sensorHujan >= "500" ? "Kering": "Basah"
-      const statusLdr = sensorIntensitas <="500" ? "Terang" : "Gelap";
      setnilaiSensorHujan(sensorHujan);
      setnilaiSensorLdr(sensorIntensitas)
-     setstatusSensorHujan(statusHujan)
-     setstatusSensorLdr(statusLdr)
      setstatusJemuran(sensorKeterangan)
 
     } catch (error) {
