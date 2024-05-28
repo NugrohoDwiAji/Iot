@@ -30,7 +30,7 @@ const GrafikAreaIntensitas = () => {
       fetchSensorData();
   
       // Set interval to fetch data every 10 seconds
-      const intervalId = setInterval(fetchSensorData, 10000);
+      const intervalId = setInterval(fetchSensorData, 2000);
   
       // Clean up interval on component unmount
       return () => clearInterval(intervalId);
